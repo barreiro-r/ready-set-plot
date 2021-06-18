@@ -8,7 +8,8 @@ library(emo)
 
 ui <- fluidPage(
     rclipboardSetup(),
-    tags$title(emo::ji("rocket"),'RSP!'),
+    tags$head(HTML(paste0('<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">'))),
+    tags$title('RSP!'),
     tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
     tags$div(id = 'main_container',
     sidebarLayout(
@@ -25,7 +26,7 @@ ui <- fluidPage(
           ),
           mainPanel(
               tabsetPanel(type = 'pills',
-                  tabPanel("plot",
+                  tabPanel(icon('image'),
                            tags$div(id = 'my_slider', tags$div(class = 'left_label',"Plot size"),
                                     tags$div(class = 'right_slider',
                            sliderInput(inputId = "plot_size",
@@ -53,7 +54,7 @@ ui <- fluidPage(
                            # 
                            )
                   ,
-                  tabPanel("table",
+                  tabPanel(icon('table'),
                       tags$br(),
                       uiOutput("group_selector"),
                       DT::dataTableOutput("my_table"),
@@ -66,7 +67,7 @@ ui <- fluidPage(
           )
     ),
     tags$div(id = "footer_container",
-             "ready-set-plot v0.1 / plot package by",a(icon('github'),"jolars/eulerr",href="https://github.com/jolars/eulerr"), " / shinyapp by",a(icon('github'),"barreiro-r/ready-set-plot",href="https://github.com/barreiro-r/ready-set-plot"))
+             "ready-set-plot v0.1 · plot package by",a(icon('github'),"jolars/eulerr",href="https://github.com/jolars/eulerr"), " · shinyapp by",a(icon('github'),"barreiro-r/ready-set-plot",href="https://github.com/barreiro-r/ready-set-plot"))
     )
 )
 
