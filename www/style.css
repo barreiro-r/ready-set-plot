@@ -1,7 +1,9 @@
 #main_container {
     max-width: 1000px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px;
 }
 
 #main_container h1 {
@@ -59,4 +61,20 @@ a {
 #footer_container {
   font-size: 12px;
   opacity: 0.5;
+}
+
+#thumb {
+  position: absolute;
+  left: -3000px;
+  overflow: hidden;
+}
+
+div#my_plot {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -11,10 +11,12 @@ ui <- fluidPage(
     tags$head(HTML(paste0('<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">'))),
     tags$title('RSP!'),
     tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
+    tags$img(id = 'thumb', src = 'thumb.png'),
+    tags$meta(property = 'og:image', src = 'thumb.png'),
     tags$div(id = 'main_container',
     sidebarLayout(
           sidebarPanel(
-            tags$h1("ready, set, plot!",emo::ji("rocket")),
+            tags$h1("ready,\nset,\nplot!",emo::ji("rocket")),
             tags$p("Welcome to the this easy set overlap tool. First set the desired amount of groups, then fill the box. Have a nice plot!"),
             
               fluidRow(
