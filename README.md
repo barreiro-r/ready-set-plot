@@ -1,6 +1,6 @@
 # ready, set, plot!
 
-![GitHub](https://img.shields.io/github/license/barreiro-r/ready-set-plot) ![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2Fbarreiro-r%2Fready-set-plot%2Fedit%2Fmain%2FREADME.md%23%3A~%3Atext%3Dshinyapps.io%2Fready-set-plot) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/barreiro-r/ready-set-plot)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5015092.svg)](https://doi.org/10.5281/zenodo.5015092) ![GitHub](https://img.shields.io/github/license/barreiro-r/ready-set-plot) ![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2Fbarreiro-r%2Fready-set-plot%2Fedit%2Fmain%2FREADME.md%23%3A~%3Atext%3Dshinyapps.io%2Fready-set-plot) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/barreiro-r/ready-set-plot)
 
 Hello 👋
 
